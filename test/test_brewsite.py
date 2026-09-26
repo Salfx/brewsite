@@ -1,5 +1,7 @@
-from app.brewsite import hello_world
+from app.brewsite import app, home
 
 
-def test_hello_world():
-    assert "Hello World!" in hello_world()
+def test_home():
+    with app.app_context():
+        response = home()
+        assert "Salvador Felix" in response
