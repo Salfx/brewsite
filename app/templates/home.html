@@ -2,7 +2,21 @@
 
 {% block main %}
 
-<p>Welcome to our brewsite page</p>
-<p>{{ user }}</p>
+<div class="container mt-3">
+
+    <p>Welcome to our brewsite page</p>
+
+    <p>{{ user }}</p>
+
+    <p>
+        This website provides information about different breweries and types of beer.
+    </p>
+
+    <img src="{{ url_for('static', filename='images/beer.jpg') }}"
+         alt="Glass of beer"
+         class="img-fluid"
+         style="max-width: 500px;">
+
+</div>
 
 {% endblock main %}
