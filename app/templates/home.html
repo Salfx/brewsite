@@ -12,10 +12,27 @@
         This website provides information about different breweries and types of beer.
     </p>
 
-    <img src="{{ url_for('static', filename='images/beer.jpg') }}"
-         alt="Glass of beer"
-         class="img-fluid"
-         style="max-width: 500px;">
+    <div class="row">
+
+        <div class="col-md-4 mb-3">
+            <img src="{{ url_for('static', filename='images/beer.jpg') }}"
+                 alt="Glass of beer"
+                 class="img-fluid">
+        </div>
+
+        <div class="col-md-4 mb-3">
+            <img src="{{ url_for('static', filename='images/Brewery.jpg') }}"
+                 alt="Beer being poured at a brewery"
+                 class="img-fluid">
+        </div>
+
+        <div class="col-md-4 mb-3">
+            <img src="{{ url_for('static', filename='images/Barley.jpg') }}"
+                 alt="Barley used for brewing"
+                 class="img-fluid">
+        </div>
+
+    </div>
 
 </div>
 
